@@ -1,0 +1,1 @@
+2017-10-20 20:55:22.6665|TRACE|AdPortal.Infrastructure.Services.DataInitializer|Initializing data..

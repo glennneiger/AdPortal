@@ -1,0 +1,8 @@
+/home/michal/Documents/basd/AdPortal.Core/obj/Debug/netstandard2.0/AdPortal.Core.csproj.CoreCompileInputs.cache
+/home/michal/Documents/basd/AdPortal.Core/obj/Debug/netstandard2.0/AdPortal.Core.AssemblyInfoInputs.cache
+/home/michal/Documents/basd/AdPortal.Core/obj/Debug/netstandard2.0/AdPortal.Core.AssemblyInfo.cs
+/home/michal/Documents/basd/AdPortal.Core/bin/Debug/netstandard2.0/AdPortal.Core.deps.json
+/home/michal/Documents/basd/AdPortal.Core/bin/Debug/netstandard2.0/AdPortal.Core.dll
+/home/michal/Documents/basd/AdPortal.Core/bin/Debug/netstandard2.0/AdPortal.Core.pdb
+/home/michal/Documents/basd/AdPortal.Core/obj/Debug/netstandard2.0/AdPortal.Core.dll
+/home/michal/Documents/basd/AdPortal.Core/obj/Debug/netstandard2.0/AdPortal.Core.pdb

@@ -1,0 +1,51 @@
+@model AdPortal.Infrastructure.Command.Users.Login
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title.</h1>
+</hgroup>
+
+
+<section id="loginForm">
+<h2>Use a local account to log in.</h2>
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.ValidationSummary(true)
+
+@if(ViewBag.errorOccured == true)
+{
+    <div class="alert alert-danger" role="alert">
+    @ViewBag.errorText
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-4"> 
+    <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+              <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-primary"/>
+            </div>
+            </form>
+    <p>
+        @Html.ActionLink("Register", "Register") if you don't have an account.
+    </p>
+    </div>
+    </div>
+}
+</section>
+
+
+

@@ -1,0 +1,45 @@
+@model AdPortal.Infrastructure.DTO.AdDTO
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Are you sure to delete this ad?</h2>
+
+<div>
+    <h4>Ad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Content)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Content)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpiryDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpiryDate)
+        </dd>
+    </dl>
+</div>
+<div>
+  <form asp-action="DeleteAd"> 
+        <input type="hidden" asp-for="Id"  />
+        <input type="submit" value="DeleteAd" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
