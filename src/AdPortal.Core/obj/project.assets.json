@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/michal/Documents/basd/AdPortal.Core/AdPortal.Core.csproj",
+      "projectUniqueName": "/home/michal/Documents/AdPortal/src/AdPortal.Core/AdPortal.Core.csproj",
       "projectName": "AdPortal.Core",
-      "projectPath": "/home/michal/Documents/basd/AdPortal.Core/AdPortal.Core.csproj",
+      "projectPath": "/home/michal/Documents/AdPortal/src/AdPortal.Core/AdPortal.Core.csproj",
       "packagesPath": "/home/michal/.nuget/packages/",
-      "outputPath": "/home/michal/Documents/basd/AdPortal.Core/obj/",
+      "outputPath": "/home/michal/Documents/AdPortal/src/AdPortal.Core/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

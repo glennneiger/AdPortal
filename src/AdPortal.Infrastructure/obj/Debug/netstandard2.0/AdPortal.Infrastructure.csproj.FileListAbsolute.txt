@@ -8,3 +8,13 @@
 /home/michal/Documents/basd/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.AssemblyInfo.cs
 /home/michal/Documents/basd/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.dll
 /home/michal/Documents/basd/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/bin/Debug/netstandard2.0/AdPortal.Infrastructure.deps.json
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/bin/Debug/netstandard2.0/AdPortal.Infrastructure.dll
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/bin/Debug/netstandard2.0/AdPortal.Infrastructure.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/bin/Debug/netstandard2.0/AdPortal.Core.dll
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/bin/Debug/netstandard2.0/AdPortal.Core.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.csproj.CoreCompileInputs.cache
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.AssemblyInfoInputs.cache
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.AssemblyInfo.cs
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.dll
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.pdb

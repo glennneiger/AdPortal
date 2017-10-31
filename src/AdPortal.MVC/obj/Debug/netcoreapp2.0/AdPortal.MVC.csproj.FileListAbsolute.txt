@@ -12,3 +12,17 @@
 /home/michal/Documents/basd/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.AssemblyInfo.cs
 /home/michal/Documents/basd/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.dll
 /home/michal/Documents/basd/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.MVC.deps.json
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.MVC.runtimeconfig.json
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.MVC.runtimeconfig.dev.json
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.MVC.dll
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.MVC.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.Core.dll
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.Infrastructure.dll
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.Core.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/bin/Debug/netcoreapp2.0/AdPortal.Infrastructure.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.csproj.CoreCompileInputs.cache
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.AssemblyInfoInputs.cache
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.AssemblyInfo.cs
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.dll
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.pdb

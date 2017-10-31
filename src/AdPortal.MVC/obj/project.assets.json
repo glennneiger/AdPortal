@@ -13002,11 +13002,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/michal/Documents/basd/AdPortal.MVC/AdPortal.MVC.csproj",
+      "projectUniqueName": "/home/michal/Documents/AdPortal/src/AdPortal.MVC/AdPortal.MVC.csproj",
       "projectName": "AdPortal.MVC",
-      "projectPath": "/home/michal/Documents/basd/AdPortal.MVC/AdPortal.MVC.csproj",
+      "projectPath": "/home/michal/Documents/AdPortal/src/AdPortal.MVC/AdPortal.MVC.csproj",
       "packagesPath": "/home/michal/.nuget/packages/",
-      "outputPath": "/home/michal/Documents/basd/AdPortal.MVC/obj/",
+      "outputPath": "/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -13023,11 +13023,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/home/michal/Documents/basd/AdPortal.Core/AdPortal.Core.csproj": {
-              "projectPath": "/home/michal/Documents/basd/AdPortal.Core/AdPortal.Core.csproj"
+            "/home/michal/Documents/AdPortal/src/AdPortal.Core/AdPortal.Core.csproj": {
+              "projectPath": "/home/michal/Documents/AdPortal/src/AdPortal.Core/AdPortal.Core.csproj"
             },
-            "/home/michal/Documents/basd/AdPortal.Infrastructure/AdPortal.Infrastructure.csproj": {
-              "projectPath": "/home/michal/Documents/basd/AdPortal.Infrastructure/AdPortal.Infrastructure.csproj"
+            "/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/AdPortal.Infrastructure.csproj": {
+              "projectPath": "/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/AdPortal.Infrastructure.csproj"
             }
           }
         }
