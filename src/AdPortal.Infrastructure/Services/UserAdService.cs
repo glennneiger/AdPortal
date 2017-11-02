@@ -36,13 +36,14 @@ namespace AdPortal.Infrastructure.Services
             var category = await _categoryRepository.GetOrFailAsync(categoryID);
             var ad = user.GetAd(adId);
             ad.EditAd(name,content,category);
+            
             await _userRepository.UpdateAsync(user);
         }
 
         public async Task<AdDTO> GetAdDTOAsync(Guid userId, Guid adId)
         {
             var user = await _userRepository.GetOrFailAsync(userId);
-            var ad = user.Ads.SingleOrDefault(x=>x.Id == adId);
+            var ad = user.GetAd(adId);
             if(ad == null)
             {
                 throw new Exception("Selected ad does not exists.");

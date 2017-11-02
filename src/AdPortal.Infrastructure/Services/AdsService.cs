@@ -29,7 +29,6 @@ namespace AdPortal.Infrastructure.Services
         public async Task<IEnumerable<AdDTO>> BrowseAsync(Guid userId)
         {
             var user = await _repository.GetOrFailAsync(userId);
-
             return _mapper.Map<IEnumerable<AdDTO>>(user.Ads);
         }
 
