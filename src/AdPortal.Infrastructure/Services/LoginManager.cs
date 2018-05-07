@@ -19,7 +19,7 @@ namespace AdPortal.Infrastructure.Services
             return _settings.AuthName;
         }
 
-        public async Task<ClaimsPrincipal> GetClaimsPrincipalAsync(string email, string role)
+        public async Task<ClaimsPrincipal> GetClaimsPrincipalAsync(string email)
         {
             var user = await _userService.GetUserDTO(email);
             var claims = new List<Claim>
@@ -27,7 +27,7 @@ namespace AdPortal.Infrastructure.Services
                 new Claim(ClaimTypes.NameIdentifier , user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.UserName),
 				new Claim(ClaimTypes.Email, email),
-				new Claim(ClaimTypes.Role, "User")
+				new Claim(ClaimTypes.Role, user.Role.ToString())
 			};
  
 			var userIdentity = new ClaimsIdentity(claims,"Name");

@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using AdPortal.Core.Domain;
 
 namespace AdPortal.Infrastructure.DTO
 {
@@ -26,5 +27,6 @@ namespace AdPortal.Infrastructure.DTO
         public string UserName {get;set;}
         public CategoryDTO Category{get;set;}
         public Guid CategoryId{get;set;}
+        public Status Status {get; set;}
     }
 }

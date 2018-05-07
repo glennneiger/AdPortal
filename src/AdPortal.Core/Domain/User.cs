@@ -4,11 +4,16 @@ using System.Linq;
 
 namespace AdPortal.Core.Domain
 {
+    public enum Role
+    {
+        User = 0,
+        Admin = 1
+    };
     public class User
     {
 
 
-        public User (Guid id, string email, string userName, string password,string salt, string role)
+        public User (Guid id, string email, string userName, string password,string salt, Role role)
         {
             this.Salt = salt;
             this.Email = email;
@@ -24,7 +29,7 @@ namespace AdPortal.Core.Domain
         public string Email { get; set; }
         public string Password {get; set;}
         public string UserName { get; set; }
-        public string Role {get; set;}
+        public Role Role {get; set;}
         public DateTime BirthDate { get; set; }
         private ISet<Ad> _Ads = new HashSet<Ad>();
         public IEnumerable<Ad> Ads

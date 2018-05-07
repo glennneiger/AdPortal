@@ -1,0 +1,65 @@
+@model IEnumerable<AdPortal.Infrastructure.DTO.AdDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Admin Panel</h2>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AddDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ExpiryDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </th>
+                <th>
+                    Details
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+               <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpiryDate)
+            </td>
+            <td>
+               
+                @Html.DisplayFor(modelItem => item.UserName)
+                
+            </td>
+            <td>
+                <a asp-controller="Home" asp-action="Details" asp-route-id="@item.Id">Details</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+           </td>
+           <td>
+              <a asp-action="ChangeStatus" asp-route-id="@item.Id" class="btn btn-info">Change Status</a> 
+           </td>
+        </tr>
+}
+    </tbody>
+</table>

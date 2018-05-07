@@ -52,6 +52,10 @@
                                     <li><a asp-controller="User" asp-action="ChangePassword">Change Password</a></li>
                                 </ul>
                             </li>
+                            @if(@User.Role() == "Admin")
+                            {
+                            <li class=""><a asp-controller="Admin" asp-action="Index">Admin Panel</a></li>
+                            }
                             <li class=""><a asp-controller="User" asp-action="Logout">Logout</a></li>
                     }
                     </ul>

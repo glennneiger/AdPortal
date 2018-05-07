@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AdPortal.Core.Domain;
 using Microsoft.Extensions.Logging;
 
 
@@ -56,7 +57,7 @@ namespace AdPortal.Infrastructure.Services
                 Random random = new Random();
                 for(int i=0;i<5;i++)
                 {
-                    await _userService.RegisterAsync($"user{i}",$"user{i}@email.com","secret","user");
+                    await _userService.RegisterAsync($"user{i}",$"user{i}@email.com","secret",Role.User);
                     _logger.LogTrace($"Created user{i}");
                     for(int j=0;j<5;j++)
                     {
@@ -66,10 +67,24 @@ namespace AdPortal.Infrastructure.Services
                         var category = categories[random.Next(0,count)];
                         var user = await _userService.GetUserDTO($"user{i}@email.com");
                         await _userAdService.AddAsync(user.Id,category.Id
-                        ,$"ad by user{i}",Guid.NewGuid().ToString(), DateTime.UtcNow.AddYears(3) );
+                        ,$"ad by user{i}",Guid.NewGuid().ToString(), DateTime.UtcNow.AddYears(3));
                         _logger.LogTrace($"Created {j}th ad for user{i}");
                     }
                 }
+                await _userService.RegisterAsync($"admin",$"admin@email.com","secret",Role.Admin);
+                _logger.LogTrace($"Created admin");
+                for(int j=0;j<5;j++)
+                {
+                    
+                    var categories = (await _categoryService.BrowseDTOAsync()).ToList();
+                    var count = categories.Count -1;
+                    var category = categories[random.Next(0,count)];
+                    var user = await _userService.GetUserDTO($"admin@email.com");
+                    await _userAdService.AddAsync(user.Id,category.Id
+                    ,$"ad by admin",Guid.NewGuid().ToString(), DateTime.UtcNow.AddYears(3) );
+                    _logger.LogTrace($"Created ad for admin");
+                }
+                
 
             }
         }

@@ -1,3 +1,4 @@
+using AdPortal.Core.Domain;
 using AdPortal.Infrastructure.Command;
 
 namespace AdPortal.Infrastructure.Command.Users
@@ -7,7 +8,7 @@ namespace AdPortal.Infrastructure.Command.Users
         public string UserName {get;set;}
         public string Password {get;set;}
         public string Email {get; set;}
-        public string Role {get {return "user";}}
+        public Role Role {get {return Role.User;}}
 
     }
 }

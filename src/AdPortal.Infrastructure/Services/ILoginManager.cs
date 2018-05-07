@@ -5,7 +5,7 @@ namespace AdPortal.Infrastructure.Services
 {
     public interface ILoginManager : IService
     {
-         Task<ClaimsPrincipal> GetClaimsPrincipalAsync(string email, string role);
+         Task<ClaimsPrincipal> GetClaimsPrincipalAsync(string email);
          string GetAuthName();
 
     }

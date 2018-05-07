@@ -55,7 +55,7 @@ namespace AdPortal.MVC.Controllers
             try
             {
                 await DispatcheAsync<Login>(command);
-                await HttpContext.SignInAsync(_logger.GetAuthName(),await _logger.GetClaimsPrincipalAsync(command.Email,"user"));
+                await HttpContext.SignInAsync(_logger.GetAuthName(),await _logger.GetClaimsPrincipalAsync(command.Email));
                  ViewBag.errorOccured = false;
                 return RedirectToAction("Index", "Home");
             }

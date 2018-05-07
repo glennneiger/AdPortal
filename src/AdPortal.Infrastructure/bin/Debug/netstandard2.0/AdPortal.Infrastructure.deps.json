@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "eef9d2740f00aa53870d8b532e55c2259c1b518a"
+    "signature": "b95e76f66fdd9832f399bbd48a165e29b533b316"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,7 +16,7 @@
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Configuration.Binder": "2.0.0",
           "MongoDB.Driver": "2.4.4",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.ComponentModel.Annotations": "4.4.0"
         },
         "runtime": {
@@ -25,7 +25,7 @@
       },
       "Autofac/4.2.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.ComponentModel": "4.3.0"
         },
         "runtime": {
@@ -380,7 +380,7 @@
       },
       "MongoDB.Bson/2.4.4": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.Collections.NonGeneric": "4.3.0",
           "System.Diagnostics.Process": "4.1.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -394,7 +394,7 @@
         "dependencies": {
           "MongoDB.Bson": "2.4.4",
           "MongoDB.Driver.Core": "2.4.4",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.Linq.Queryable": "4.3.0"
         },
         "runtime": {
@@ -404,7 +404,7 @@
       "MongoDB.Driver.Core/2.4.4": {
         "dependencies": {
           "MongoDB.Bson": "2.4.4",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.1",
           "System.Collections.Specialized": "4.3.0",
           "System.Diagnostics.TraceSource": "4.0.0",
           "System.Net.NameResolution": "4.0.0",
@@ -415,7 +415,7 @@
           "lib/netstandard1.5/MongoDB.Driver.Core.dll": {}
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
@@ -1164,6 +1164,9 @@
           "System.Security.Cryptography.Primitives": "4.3.0",
           "System.Text.Encoding": "4.3.0",
           "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {}
         }
       },
       "System.Security.Cryptography.Primitives/4.3.0": {
@@ -1649,12 +1652,12 @@
       "path": "mongodb.driver.core/2.4.4",
       "hashPath": "mongodb.driver.core.2.4.4.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.0": {
+    "NETStandard.Library/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
-      "path": "netstandard.library/2.0.0",
-      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+      "sha512": "sha512-oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
+      "path": "netstandard.library/2.0.1",
+      "hashPath": "netstandard.library.2.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json/9.0.1": {
       "type": "package",

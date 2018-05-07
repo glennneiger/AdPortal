@@ -26,7 +26,16 @@ namespace AdPortal.Infrastructure.Services
         {
             var user = await _userRepository.GetOrFailAsync(userId);
             var category = await _categoryRepository.GetByIdAsync(categoryID);
-            user.AddAd(new Ad(userId,category,name,content,expiryDate));
+
+            if(user.Role == Role.Admin)
+            {
+                user.AddAd(new Ad(userId,category,name,content,expiryDate,Status.Accepted));
+            }
+            else
+            {
+                user.AddAd(new Ad(userId,category,name,content,expiryDate,Status.WaitingForAccept));
+            }
+            
             await _userRepository.UpdateAsync(user);
         }
 
@@ -39,7 +48,7 @@ namespace AdPortal.Infrastructure.Services
             
             await _userRepository.UpdateAsync(user);
         }
-
+        
         public async Task<AdDTO> GetAdDTOAsync(Guid userId, Guid adId)
         {
             var user = await _userRepository.GetOrFailAsync(userId);

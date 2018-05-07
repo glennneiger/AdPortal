@@ -91,7 +91,7 @@ namespace AdPortal.Infrastructure.Services
             throw new Exception("Invalid credentials.");
         }
 
-        public async Task RegisterAsync(string name, string email, string password, string role)
+        public async Task RegisterAsync(string name, string email, string password, Role role)
         {
             var user = await _userRepository.GetAsyncByEmail(email);
             if(user != null)

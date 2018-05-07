@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AdPortal.Core.Domain;
 using AdPortal.Core.Repositories;
 using AdPortal.Infrastructure.DTO;
 using AdPortal.Infrastructure.Extensions;
@@ -23,13 +24,21 @@ namespace AdPortal.Infrastructure.Services
             var users = await _repository.GetAllAsync();
             var ads = users.SelectMany(x=>x.Ads);
 
-            return _mapper.Map<IEnumerable<AdDTO>>(ads);
+            return _mapper.Map<IEnumerable<AdDTO>>(ads).Where(x=>x.Status==Status.Accepted);
         }
 
         public async Task<IEnumerable<AdDTO>> BrowseAsync(Guid userId)
         {
             var user = await _repository.GetOrFailAsync(userId);
-            return _mapper.Map<IEnumerable<AdDTO>>(user.Ads);
+            return _mapper.Map<IEnumerable<AdDTO>>(user.Ads).Where(x=>x.Status==Status.Accepted);
+        }
+
+        public async Task<IEnumerable<AdDTO>> BrowseAllAsync()
+        {
+            var users = await _repository.GetAllAsync();
+            var ads = users.SelectMany(x=>x.Ads);
+
+            return _mapper.Map<IEnumerable<AdDTO>>(ads);
         }
 
         public async Task<AdDTO> GetAdDTOAsync(Guid adId)

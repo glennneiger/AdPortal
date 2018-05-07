@@ -26,3 +26,4 @@
 /home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.AssemblyInfo.cs
 /home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.dll
 /home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.MVC/obj/Debug/netcoreapp2.0/AdPortal.MVC.csproj.CopyComplete

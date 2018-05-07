@@ -15,5 +15,15 @@ namespace AdPortal.MVC.Extensions
             return claims.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
 
         }
+
+        public static string Role(this ClaimsPrincipal claims)
+        {
+            if(!claims.Claims.Any())
+            {
+                return string.Empty;
+            }
+            return claims.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
+
+        }
     }
 }

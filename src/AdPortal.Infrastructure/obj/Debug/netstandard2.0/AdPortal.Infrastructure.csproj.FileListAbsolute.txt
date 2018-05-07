@@ -18,3 +18,4 @@
 /home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.AssemblyInfo.cs
 /home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.dll
 /home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.pdb
+/home/michal/Documents/AdPortal/src/AdPortal.Infrastructure/obj/Debug/netstandard2.0/AdPortal.Infrastructure.csproj.CopyComplete

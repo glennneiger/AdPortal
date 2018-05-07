@@ -8,6 +8,7 @@ namespace AdPortal.Infrastructure.Services
     public interface IAdsService : IService
     {
         Task<IEnumerable<AdDTO>> BrowseAsync();
+        Task<IEnumerable<AdDTO>> BrowseAllAsync();
         Task<IEnumerable<AdDTO>> BrowseAsync(Guid userId);
         Task<AdDTO> GetAdDTOAsync(Guid adId);
         Task<UserDetailsDTO> GetUserDetailsDTOAsync(Guid userId);

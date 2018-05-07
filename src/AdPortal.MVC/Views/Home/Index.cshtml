@@ -37,7 +37,9 @@
                 @Html.DisplayFor(modelItem => item.ExpiryDate)
             </td>
             <td>
+                <a asp-action="UserDetails" asp-route-id="@item.UserId">
                 @Html.DisplayFor(modelItem => item.UserName)
+                </a>
             </td>
             <td>
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a>
